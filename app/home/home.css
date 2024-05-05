@@ -1,0 +1,198 @@
+
+/* -------------------Hero Style ------------------ */
+.tes-hero-wrap {
+    padding: 1rem 0 2rem;
+    display: flex;
+    align-items:stretch;
+    gap: var(--tes-gap);
+}
+
+.tes-left-side ,
+.tes-right-side {
+    width:calc(50% - 15px);
+}
+.tes-hero-wrap .tes-right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tes-hero-wrap .tes-left-side img ,
+.tes-hero-wrap .tes-right-side img {
+    width:100%;
+    height:100%;
+    border-radius: 4px;
+}
+.tes-hero-wrap .tes-right-side img {
+    height: 240px;
+}
+
+/* -------------------Features  Style ------------------ */
+.tes-features-wrap {
+    padding: 3rem 0;
+    background-color: #DDE8EF;
+}
+.tes-feature-box{
+    background-color: #fff;
+    padding: 1rem;
+    width: calc(25% - 64px);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: var(--tes-shadow);
+    border-radius: 4px;
+}
+.tes-feature-box h6 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--tes-black-color);
+}
+.tes-feature-box p {
+color: var(--tes-text-color);
+font-size: 14px;
+font-weight: 400;
+}
+/* -------------------Offers  Style ------------------ */
+.tes-offers-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+/* -------------------Categories  Style ------------------ */
+.tes-home-categories{
+    background-color:#DDE8EF ;
+}
+.tes-cat-title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+}
+.tes-categories-slider {
+    padding: 0 1.25rem;
+}
+.tes-category-slide{
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--tes-white-color);
+    border-radius: 4px;
+}
+.tes-category-slide span{
+    font-size: 1rem;
+    color: var(--tes-black-color);
+    font-weight: 400;
+    transition: var(--tes-transition);
+}
+.tes-category-slide.swiper-slide-active{
+    box-shadow: var(--tes-shadow);
+}
+.swiper-button-next,
+.swiper-button-prev{
+    background-color: #FA8232;
+    border-radius: 50%;
+    color: var(--tes-white-color);
+    width: 50px;
+    height: 50px;
+}
+.swiper-button-next{
+    left: 0!important;
+}
+.swiper-button-prev{
+    right:0!important;
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 1.25rem;
+}
+/* -------------------Products Sec Style ------------------ */
+
+.tes-home-features .tes-left-side{
+    width: calc(83% - 50px);
+}
+.tes-home-features .tes-right-side{
+    width: calc(15% + 50px);
+    margin-right: 50px;
+    position: relative;
+}
+.tes-banner-wrap img{
+    width: 100%;
+    height: 100%;
+}
+
+.tes-shop-sec{
+    background-color:#DDE8EF;
+}
+.tes-shop-sec .container{
+    flex-direction:row-reverse;
+}
+
+.tes-shop-sec .tes-banner-wrap {
+    margin-left:50px;
+    margin-right:0;
+}
+
+.tes-shop-sec  .tes-product-box {
+    background-color:var(--tes-white-color)
+}
+
+.tes-banner{
+    position: relative;
+    min-height: 300px;
+    transition: var(--tes-transition);
+    overflow: hidden;
+    border-radius: 4px;
+}
+.tes-banner img{
+    transition: var(--tes-transition);
+}
+
+.tes-banner:hover img{
+    transform: scale(1.05);
+}
+
+/* ---------------------
+responsive style
+----------------------- */
+@media (max-width: 1280px) {
+    .tes-features-wrap .container{
+      @apply gap-3 justify-between flex-wrap;
+    }
+    .tes-feature-box{
+      @apply w-auto
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .tes-feature-box{
+        width: calc(50% - 6px);
+      }
+      .tes-home-features .tes-right-side{
+        @apply hidden;
+      }
+      .tes-home-features .tes-left-side{
+        @apply w-full;
+      }
+  }
+  
+  @media (max-width: 767px) {
+    .tes-banner{
+        @apply w-full;
+    }
+  }
+  @media (max-width: 576px) {
+    .tes-hero-wrap{
+        @apply flex-wrap gap-[10px];
+    }
+    .tes-left-side,
+    .tes-right-side{
+        @apply w-full;
+    }
+    .tes-feature-box{
+        @apply w-full
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tes-features-wrap{
+        @apply py-5;
+    }
+  }
+  
