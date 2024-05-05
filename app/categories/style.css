@@ -20,6 +20,7 @@
 }
 .tes-product-content{
     width: calc(75% - 48px);
+    overflow-x: hidden;
 }
 .tes-product-img{
     position: relative;
