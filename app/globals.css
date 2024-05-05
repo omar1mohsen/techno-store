@@ -879,9 +879,18 @@ responsive style
     @apply max-w-[120px];
   }
   .tes-preload .tes-text {
-    @apply text-[2rem]
+    @apply text-[2rem];
   }
   .tes-modal-box{
     @apply w-full
+  }
+  .css-jkscjg{
+    @apply text-[16px];
+  }
+  .tes-prod-img {
+    @apply p-4 h-[200px];
+  }
+  .tes-product-btn{
+     @apply p-[.5rem];
   }
 }
